@@ -1,0 +1,16 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "uri": "mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/?retryWrites=true&w=majority",
+        "client": "mongo",
+        "database": "${process.env.DB_NAME}"
+      },
+      "options": {
+        "ssl" : true
+      }
+    }
+  }
+}
