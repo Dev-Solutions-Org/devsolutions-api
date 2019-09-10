@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "team",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "required": true,
+      "type": "string"
+    }
+  }
+}
