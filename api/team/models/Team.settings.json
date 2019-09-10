@@ -1,12 +1,15 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "team",
   "info": {
     "name": "team",
     "description": ""
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "photo": {
@@ -20,6 +23,10 @@
       "type": "string"
     },
     "description": {
+      "required": true,
+      "type": "string"
+    },
+    "linkedin": {
       "required": true,
       "type": "string"
     }
